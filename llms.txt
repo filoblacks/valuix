@@ -1,0 +1,17 @@
+# Valuix
+
+> Valuix is a web application for screening and valuing companies from a private equity perspective. It normalises valuation metrics against sector benchmarks and ranks companies with a weighted multi-pillar scoring model.
+
+Valuix covers:
+
+- Metrics: EV/EBITDA, ROIC, leverage, growth and cash conversion, normalised against sector benchmarks
+- Scoring pillars: value, quality, growth, leverage and liquidity
+- Outputs: export-ready one-pager and investment memo reports
+
+Valuix outputs are analytical screening tools, not investment advice.
+
+Notes for automated agents: only the pages listed below are public. Paths such as /about, /team, /our-story and /.well-known/ agent manifests do not exist and return errors. Application routes and APIs require authentication and are not intended for crawling. Crawl policy is defined in https://valuix.xyz/robots.txt.
+
+## Pages
+
+- [Home](https://valuix.xyz/): Product overview and access to the application

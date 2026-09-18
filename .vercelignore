@@ -1,0 +1,20 @@
+# .vercelignore for Valuix
+# Files listed here stay in the repo but are never deployed/public.
+
+# Internal documents
+*.docx
+*.doc
+*.pdf
+*.xlsx
+*.pptx
+
+# Screenshots and working images
+Screenshot*
+*.png
+*.jpg
+*.jpeg
+
+# OS and editor clutter
+.DS_Store
+.vscode/
+*.log

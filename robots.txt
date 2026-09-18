@@ -1,0 +1,44 @@
+# robots.txt for https://valuix.xyz
+# Last updated: 2026-09-18
+#
+# Enforcement lives in the Vercel Firewall. This file only tells
+# well-behaved crawlers what to do; it cannot stop abusive ones.
+
+# ------------------------------------------------------------------
+# Google Search crawler: fully blocked (temporary)
+# Reason: ~3M requests on nonexistent paths on 2026-09-17/18.
+# To restore Google Search, delete this group AND the
+# "Block Googlebot" firewall rule.
+# ------------------------------------------------------------------
+User-agent: Googlebot
+Disallow: /
+
+# Google AI training/grounding control token (not a separate crawler)
+User-agent: Google-Extended
+Disallow: /
+
+# ------------------------------------------------------------------
+# AI training and bulk-collection crawlers: high volume, no benefit
+# ------------------------------------------------------------------
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: Meta-ExternalAgent
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+Disallow: /
+
+# ------------------------------------------------------------------
+# Everyone else (Bing, DuckDuckGo, user-triggered AI agents)
+# Valuix is a single static page; nothing else is meant to be crawled.
+# ------------------------------------------------------------------
+User-agent: *
+Allow: /$
+Allow: /robots.txt
+Allow: /llms.txt
+Disallow: /
+Crawl-delay: 10
+
+# Uncomment only if a sitemap actually exists at this URL:
+# Sitemap: https://valuix.xyz/sitemap.xml
